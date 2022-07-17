@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <!-- MainFragment -->
+    <fragment android:id="@+id/mainFragment"
+        android:name="com.prabhu.socialmediatest.view.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action android:id="@+id/action_mainFragment_to_playerFragment"
+            app:destination="@id/playerFragment"/>
+
+    </fragment>
+
+    <!-- PlayerFragment -->
+    <fragment android:id="@+id/playerFragment"
+        android:name="com.app.videopreloading.ui.player.PlayerFragment"
+        android:label="fragment_view_transaction"
+        tools:layout="@layout/player_fragment"/>
+
+</navigation>
